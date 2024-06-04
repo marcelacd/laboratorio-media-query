@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Responsiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Página Responsiva</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section>
+            <h2>Acerca de Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </section>
+
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Servicio 1</li>
+                <li>Servicio 2</li>
+                <li>Servicio 3</li>
+            </ul>
+        </section>
+
+        <!-- <section>
+            <h2>Imagen</h2>
+            <div class="image-container">
+                <img src="img/luna.jpg" width="100%" alt="Descripción de la imagen">
+            </div>
+        </section> -->
+
+        <section>
+            <h2>Imagen</h2>
+            <div class="image-container">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/luna.jpg">
+                    <source media="(max-width: 768px)" srcset="img/estrella.jpg">
+                    <img src="img/luna.jpg" alt="Descripción de la imagen">
+                </picture>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p id="animatedText">Derechos de autor © 2023 Marcela C'D</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
